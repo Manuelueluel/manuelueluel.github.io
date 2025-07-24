@@ -1,0 +1,39 @@
+{
+  "content": [
+    {
+      "type": "p",
+      "flag": "-d, --description",
+      "text": "I'm Manuel, an aspiring software developer currently studying Computer Science at the University of Trento. I enjoy discovering how things work at a <span class=\"highlight\">low level</span> in order to fully understand them. I've already worked as a Junior Software Developer, developing a front-end web application for a company in Trento. During university I've developed multiple projects in mobile, web and Linux environments.",
+      "url": null,
+      "list": null
+    },
+    {
+      "type": "a",
+      "flag": "-l, --linkedin",
+      "text": "Linkedin",
+      "url": "https://www.linkedin.com/in/manuel-mondin-9b6733267/",
+      "list": null
+    },
+    {
+      "type": "a",
+      "flag": "-g, --github",
+      "text": "Github",
+      "url": "https://github.com/Manuelueluel",
+      "list": null
+    },
+    {
+      "type": "ul",
+      "flag": "-i, --interests",
+      "text": null,
+      "url": null,
+      "list": [
+        "Coding",
+        "Running",
+        "Mountain biking",
+        "Hiking",
+        "TTRPG",
+        "Music"
+      ]
+    }
+  ]
+}

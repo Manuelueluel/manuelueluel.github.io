@@ -1,0 +1,156 @@
+/* Theme heavily inspired by https://github.com/simurai/duotone-dark-space-syntax*/
+:root {
+  --uno-1: #8b9ea2;
+  --uno-2: #8686cb;
+  --uno-3: #7272a1;
+  --uno-4: #5b5b7b;
+  --uno-5: #49495a;
+  --uno-6: #2b2b36;
+  --uno-7: #24242d;
+  --uno-8: #1d1d24;
+
+  --duo-1: #fe7734;
+  --duo-2: #b06845;
+  --duo-3: #644c40;
+}
+
+* {
+  background: var(--uno-8);
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 500;
+  color: var(--uno-1);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 80ch;
+  min-height: 95vh;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+h2 {
+  display: inline-block;
+  min-width: max-content;
+  font-size: inherit;
+  padding: 0 0.5em;
+  margin: 0;
+  background-color: var(--uno-6);
+  color: var(--duo-1);
+}
+
+.flag-container {
+  min-width: 20ch;
+}
+
+.content > * {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.itemContainer > * {
+  margin-top: 1ch;
+}
+
+a {
+  color: var(--duo-1);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--duo-2);
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin-left: 2ch;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.highlight {
+  background-color: var(--uno-6);
+}
+
+footer {
+  font-size: 1rem;
+  color: var(--uno-1);
+  margin-top: auto;
+}
+
+.text-background {
+  color: var(--uno-1);
+}
+
+.text-secondary {
+  color: var(--uno-3);
+}
+
+.cursor {
+  color: var(--duo-1);
+}
+
+.me-container {
+  display: none;
+}
+
+.typeme {
+  width: 27ch;
+  animation: typing 1.5s steps(20), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 10px solid var(--duo-2);
+}
+
+/* animation */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 27ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* dynamic resizing */
+@media (min-width: 600px) {
+  body {
+    font-size: 1.25rem;
+  }
+}
+
+/* loading bar */
+.progress-container {
+  display: none;
+  flex-direction: row;
+  margin-top: 1ch;
+  color: var(--uno-3);
+}
+
+.bar {
+  color: inherit;
+}
