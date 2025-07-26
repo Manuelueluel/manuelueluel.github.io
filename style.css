@@ -18,10 +18,16 @@
 }
 
 /* dynamic resizing */
-@media (min-width: 50em) {
+@media (max-width: 50em) {
   :root {
     --max-w: 80%;
-    --fs: 1.25rem;
+    --fs: 1.15rem;
+  }
+}
+
+@media (max-width: 30em) {
+  :root {
+    --fs: 1rem;
   }
 }
 
