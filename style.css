@@ -14,14 +14,13 @@
   --duo-3: #644c40;
 
   --max-w: 80ch;
-  --fs: 1.25rem;
+  --fs: clamp(1rem, 2.5vw, 1.25rem);
 }
 
 /* dynamic resizing */
 @media (max-width: 50em) {
   :root {
     --max-w: 80%;
-    --fs: 1.15rem;
   }
 }
 
