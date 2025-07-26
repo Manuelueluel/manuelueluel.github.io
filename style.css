@@ -14,7 +14,7 @@
   --duo-3: #644c40;
 
   --max-w: 80ch;
-  --fs: 1rem;
+  --fs: 1.25rem;
 }
 
 /* dynamic resizing */
@@ -22,12 +22,6 @@
   :root {
     --max-w: 80%;
     --fs: 1.15rem;
-  }
-}
-
-@media (max-width: 30em) {
-  :root {
-    --fs: 1rem;
   }
 }
 
