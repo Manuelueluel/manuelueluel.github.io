@@ -37,7 +37,7 @@ function loadingItem(item) {
   content.append(document.createElement("br"));
 
   const itemContainer = document.createElement("div");
-  itemContainer.setAttribute("class", "itemContainer");
+  itemContainer.setAttribute("class", "item-container");
 
   const flagContainer = document.createElement("div");
   flagContainer.setAttribute("class", "flag-container");

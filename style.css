@@ -12,6 +12,17 @@
   --duo-1: #fe7734;
   --duo-2: #b06845;
   --duo-3: #644c40;
+
+  --max-w: 80ch;
+  --fs: 1rem;
+}
+
+/* dynamic resizing */
+@media (min-width: 50em) {
+  :root {
+    --max-w: 80%;
+    --fs: 1.25rem;
+  }
 }
 
 * {
@@ -19,16 +30,15 @@
   font-family: "Ubuntu Mono", monospace;
   font-weight: 500;
   color: var(--uno-1);
+  font-size: var(--fs);
 }
 
 body {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 80ch;
+  max-width: var(--max-w);
   min-height: 95vh;
   padding: 1rem;
-  font-size: 1rem;
 }
 
 h2 {
@@ -51,7 +61,7 @@ h2 {
   align-items: flex-start;
 }
 
-.itemContainer > * {
+.item-container > * {
   margin-top: 1ch;
 }
 
@@ -79,7 +89,7 @@ ul {
 }
 
 footer {
-  font-size: 1rem;
+  font-size: var(--fs);
   color: var(--uno-1);
   margin-top: auto;
 }
@@ -133,13 +143,6 @@ footer {
 @keyframes blink {
   50% {
     border-color: transparent;
-  }
-}
-
-/* dynamic resizing */
-@media (min-width: 600px) {
-  body {
-    font-size: 1.25rem;
   }
 }
 
