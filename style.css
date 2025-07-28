@@ -14,13 +14,26 @@
   --duo-3: #644c40;
 
   --max-w: 80ch;
-  --fs: clamp(1.25rem, 3vw, 1.4rem);
+  --fs: 1.3rem;
+  --flag-w: 20ch;
+  --flag-extended: flex;
+  --flag-short-padding: 0;
 }
 
 /* dynamic resizing */
 @media (max-width: 50em) {
   :root {
     --max-w: 80%;
+  }
+}
+
+@media (orientation: portrait) {
+  :root {
+    --max-w: 80%;
+    --fs: 1.4rem;
+    --flag-w: 5ch;
+    --flag-extended: none;
+    --flag-short-padding: 0 0.5ch;
   }
 }
 
@@ -41,17 +54,29 @@ body {
 }
 
 h2 {
-  display: inline-block;
-  min-width: max-content;
   font-size: inherit;
-  padding: 0 0.5em;
-  margin: 0;
-  background-color: var(--uno-6);
   color: var(--duo-1);
 }
 
 .flag-container {
-  min-width: 20ch;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  min-width: var(--flag-w);
+}
+
+.flag-short {
+  display: flex;
+  padding: var(--flag-short-padding);
+  background-color: var(--uno-6);
+  margin: 0;
+}
+
+.flag-extended {
+  display: var(--flag-extended);
+  padding-right: 0.5ch;
+  background-color: var(--uno-6);
+  margin: 0;
 }
 
 .content > * {

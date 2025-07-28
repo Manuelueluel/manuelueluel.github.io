@@ -42,9 +42,15 @@ function loadingItem(item) {
   const flagContainer = document.createElement("div");
   flagContainer.setAttribute("class", "flag-container");
 
-  const h2 = document.createElement("h2");
-  h2.textContent = item.flag;
-  flagContainer.appendChild(h2);
+  const h2Short = document.createElement("h2");
+  h2Short.textContent = item["flag-short"];
+  h2Short.setAttribute("class", "flag-short");
+  flagContainer.appendChild(h2Short);
+
+  const h2Extended = document.createElement("h2");
+  h2Extended.textContent = `, ${item["flag-extended"]}`;
+  h2Extended.setAttribute("class", "flag-extended");
+  flagContainer.appendChild(h2Extended);
   itemContainer.appendChild(flagContainer);
 
   const elem = document.createElement(item.type);
