@@ -14,7 +14,7 @@
   --duo-3: #644c40;
 
   --max-w: 80ch;
-  --fs: clamp(1.15rem, 3vw, 1.4rem);
+  --fs: clamp(1.25rem, 3vw, 1.4rem);
 }
 
 /* dynamic resizing */
